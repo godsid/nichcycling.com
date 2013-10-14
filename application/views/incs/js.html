@@ -1,0 +1,36 @@
+<script src="<?php echo assets_url('/js/superfish.js')?>"></script>
+<script src="<?php echo assets_url('/js/jquery.toggleformtext.js')?>"></script>
+<script src="<?php echo assets_url('/js/jquery.flexslider.js')?>"></script>
+<script>
+$('#nav-drop').superfish().find('ul');
+  			$('#nav-drop').superfish({
+					animation:{
+						opacity:'show',height:'show'
+						}, speed:1, dropShadows: false
+});
+/*back to top*/
+$(document).ready(function(){
+	 $(".btn-back2top a").click(function () {
+	   $("html, body").animate({scrollTop: 0}, 800);
+	});
+}); 
+/*FlexSlider*/
+	$(window).load(function() {
+	  $('.flexslider').flexslider({
+		animation: "slide",
+		/*controlNav: false,
+		animationLoop: false,
+		slideshow: false,*/
+	  });
+	});
+    
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/th_TH/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
