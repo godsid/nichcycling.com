@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends MX_Controller {
+class Welcome extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,7 +19,7 @@ class Home extends MX_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('home');
+		$this->load->view('welcome_message');
 	}
 }
 

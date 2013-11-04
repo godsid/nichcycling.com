@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends MX_Controller {
+class Wheelset extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,7 +19,28 @@ class Home extends MX_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('home');
+		$this->load->view('wheelset');
+	}
+
+	public function detail(){
+		$this->load->view('wheelset_detail');
+	}
+	
+	public function save($id=""){
+		if(empty($id)){
+			$this->_create();
+		}else{
+			$this->_edit($id);
+		}
+	}
+	public function delete($id){
+
+	}
+	private function _edit($id){
+
+	}
+	private function _create(){
+	
 	}
 }
 
